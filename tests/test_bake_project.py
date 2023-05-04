@@ -82,9 +82,8 @@ def execute(command: List[str], dirpath: str, timeout=30, supress_warning=True):
 
     if err and not supress_warning:
         raise RuntimeError(err)
-    else:
-        print(err)
-        return out
+    print(err)
+    return out
 
 
 def test_year_compute_in_license_file(cookies):
